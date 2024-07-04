@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form.css" rel="stylesheet" >
+    <title>My Portfolio</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <div class="content-box">
+        <form action="/submit-your-form-handler" method="post">
+            <div class="row-1">
+                <div class="main">
+                    <div>
+                        <label for="fname">Firstname:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div>
+                        <label for="mname">Middlename:</label>
+                        <input type="text" id="mname" name="mname">
+                    </div>
+                    <div>
+                        <label for="lname">Lastname:</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                   
+                    <div class="select">
+                        <div>
+                            <label class="heading-label">Choose your course:</label><br>
+                            <input type="radio" id="comsci" name="course" value="comsci">
+                            <label for="comsci">Bachelor of Computer Science</label><br>
+
+                            <input type="radio" id="it" name="course" value="it">
+                            <label for="it">Bachelor of Science in Information Technology</label><br>
+
+                            <input type="radio" id="softe" name="course" value="softe">
+                            <label for="softe">Software engineering</label><br>
+
+                            <input type="radio" id="comeng" name="course" value="comeng">
+                            <label for="comeng">Computer Engineering</label><br>
+
+                            <label for="others">Others:</label>
+                            <textarea id="others" name="others"></textarea> 
+                        </div>
+                    </div>
+
+                    <div class="select">
+                        <div>
+                            <label class="heading-label">What do you expertise most?</label><br>
+                            <input type="radio" id="html" name="expertise" value="html">
+                            <label for="html">HTML</label>
+
+                            <input type="radio" id="css" name="expertise" value="css">
+                            <label for="css">CSS</label>
+
+                            <input type="radio" id="js" name="expertise" value="js">
+                            <label for="js">Javascript</label>
+
+                            <label for="others">Others:</label>
+                            <textarea id="others" name="others"></textarea> 
+                        </div>        
+                    </div>
+
+                    <div class="select">
+                        <div>
+                            <label class="heading-label">Choose prog. languages you're using:</label><br>
+
+                            <input type="checkbox" id="c++" name="c++" value="c++">
+                            <label for="c++">C++</label><br>
+
+                            <input type="checkbox" id="java" name="java" value="java">
+                            <label for="java">Java</label><br>
+
+                            <input type="checkbox" id="php" name="php" value="php">
+                            <label for="php">PHP</label><br>
+
+                            <input type="checkbox" id="python" name="python" value="python">
+                            <label for="python">Python</label><br>
+
+                            <label for="others">Others:</label>
+                            <textarea id="others" name="others"></textarea>                 
+                        </div>                   
+                    </div>
+
+                   
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="sidebar">
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age">
+                    </div>
+
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div> 
+                    
+                    <div>
+                        <label for="age">Nationality:</label>
+                        <select id="nationality" name="nationality">
+                            <option value="filipino">Filipino</option>
+                            <option value="dutch">Dutch</option>.
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="hungarian">Hungarian</option>
+                        </select>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="submit" name="submit" value="Enter">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
